@@ -17,9 +17,7 @@ enum Strings {
     static let error = "Error"
     static let close = "close"
     
-    //GalleryVC Content
-    static let appTitle = "PixBay"
-    static let searchPlaceHolder = "Search for photos..."
+    static let appTitle = "DreamWheels"
 }
 
 /// App fonts size should be used from here
