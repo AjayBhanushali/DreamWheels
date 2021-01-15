@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A848923725B16F2800F3DC67 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A848923625B16F2800F3DC67 /* Bindable.swift */; };
 		A8571B3325B09F30006100A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571B3225B09F30006100A9 /* AppDelegate.swift */; };
 		A8571B3725B09F30006100A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571B3625B09F30006100A9 /* ViewController.swift */; };
 		A8571B3C25B09F33006100A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8571B3B25B09F33006100A9 /* Assets.xcassets */; };
@@ -32,7 +33,18 @@
 		A8571BE125B0BC21006100A9 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571BDA25B0BC21006100A9 /* ImageOperation.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A8571BF425B0C2C4006100A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8571B2725B09F30006100A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8571B2E25B09F30006100A9;
+			remoteInfo = DreamWheels;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A848923625B16F2800F3DC67 /* Bindable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		A8571B2F25B09F30006100A9 /* DreamWheels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamWheels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8571B3225B09F30006100A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8571B3625B09F30006100A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +70,8 @@
 		A8571BD825B0BC20006100A9 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A8571BD925B0BC21006100A9 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A8571BDA25B0BC21006100A9 /* ImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
+		A8571BEF25B0C2C4006100A9 /* DreamWheelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamWheelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8571BF325B0C2C4006100A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,13 +82,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8571BEC25B0C2C4006100A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A848923525B16F0E00F3DC67 /* Bindable */ = {
+			isa = PBXGroup;
+			children = (
+				A848923625B16F2800F3DC67 /* Bindable.swift */,
+			);
+			name = Bindable;
+			sourceTree = "<group>";
+		};
 		A8571B2625B09F30006100A9 = {
 			isa = PBXGroup;
 			children = (
 				A8571B3125B09F30006100A9 /* DreamWheels */,
+				A8571BF025B0C2C4006100A9 /* DreamWheelsTests */,
 				A8571B3025B09F30006100A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				A8571B2F25B09F30006100A9 /* DreamWheels.app */,
+				A8571BEF25B0C2C4006100A9 /* DreamWheelsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,6 +171,7 @@
 		A8571BB625B0BBA5006100A9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A848923525B16F0E00F3DC67 /* Bindable */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -190,6 +222,14 @@
 			name = "Network Manager";
 			sourceTree = "<group>";
 		};
+		A8571BF025B0C2C4006100A9 /* DreamWheelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A8571BF325B0C2C4006100A9 /* Info.plist */,
+			);
+			path = DreamWheelsTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +250,24 @@
 			productReference = A8571B2F25B09F30006100A9 /* DreamWheels.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A8571BEE25B0C2C4006100A9 /* DreamWheelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8571BF625B0C2C4006100A9 /* Build configuration list for PBXNativeTarget "DreamWheelsTests" */;
+			buildPhases = (
+				A8571BEB25B0C2C4006100A9 /* Sources */,
+				A8571BEC25B0C2C4006100A9 /* Frameworks */,
+				A8571BED25B0C2C4006100A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8571BF525B0C2C4006100A9 /* PBXTargetDependency */,
+			);
+			name = DreamWheelsTests;
+			productName = DreamWheelsTests;
+			productReference = A8571BEF25B0C2C4006100A9 /* DreamWheelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,6 +279,10 @@
 				TargetAttributes = {
 					A8571B2E25B09F30006100A9 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					A8571BEE25B0C2C4006100A9 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = A8571B2E25B09F30006100A9;
 					};
 				};
 			};
@@ -238,6 +300,7 @@
 			projectRoot = "";
 			targets = (
 				A8571B2E25B09F30006100A9 /* DreamWheels */,
+				A8571BEE25B0C2C4006100A9 /* DreamWheelsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +315,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8571BED25B0C2C4006100A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -263,6 +333,7 @@
 				A8571BDB25B0BC21006100A9 /* NetworkError.swift in Sources */,
 				A8571BDC25B0BC21006100A9 /* NetworkAPIEndPoint.swift in Sources */,
 				A8571BCE25B0BBFF006100A9 /* ConstraintsX.swift in Sources */,
+				A848923725B16F2800F3DC67 /* Bindable.swift in Sources */,
 				A8571BCD25B0BBFF006100A9 /* ViewX.swift in Sources */,
 				A8571B5425B0A217006100A9 /* AppBuilder.swift in Sources */,
 				A8571BCF25B0BBFF006100A9 /* CollectionViewX.swift in Sources */,
@@ -283,7 +354,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A8571BEB25B0C2C4006100A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A8571BF525B0C2C4006100A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8571B2E25B09F30006100A9 /* DreamWheels */;
+			targetProxy = A8571BF425B0C2C4006100A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A8571B3D25B09F33006100A9 /* LaunchScreen.storyboard */ = {
@@ -348,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -403,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -457,6 +543,46 @@
 			};
 			name = Release;
 		};
+		A8571BF725B0C2C4006100A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = DreamWheelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.DreamWheelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamWheels.app/DreamWheels";
+			};
+			name = Debug;
+		};
+		A8571BF825B0C2C4006100A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KR4V4T66T8;
+				INFOPLIST_FILE = DreamWheelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = abc.DreamWheelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamWheels.app/DreamWheels";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,6 +600,15 @@
 			buildConfigurations = (
 				A8571B4425B09F33006100A9 /* Debug */,
 				A8571B4525B09F33006100A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8571BF625B0C2C4006100A9 /* Build configuration list for PBXNativeTarget "DreamWheelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8571BF725B0C2C4006100A9 /* Debug */,
+				A8571BF825B0C2C4006100A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
