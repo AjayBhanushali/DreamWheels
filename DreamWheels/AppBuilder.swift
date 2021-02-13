@@ -17,7 +17,7 @@ final public class AppBuilder {
     /// - Returns: default response
     @discardableResult
     func setRootViewController(in window: UIWindow?) -> Bool {
-        let vc = ViewController()
+        let vc = ManufacturersModuleBuilder().buildModule()
         let navigationController = UINavigationController(rootViewController: vc)
         navigationController.themeNavigationBar()
         window?.rootViewController = navigationController
