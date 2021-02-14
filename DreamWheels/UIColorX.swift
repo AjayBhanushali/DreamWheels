@@ -61,10 +61,10 @@ extension UIColor {
         if #available(iOS 13, *) {
             return UIColor.init { (trait) -> UIColor in
                 // the color can be from your own color config struct as well.
-                return trait.userInterfaceStyle == .dark ? UIColor.white : UIColor.init(hex: "#414141")
+                return trait.userInterfaceStyle == .dark ? UIColor(hex: APP_COLOR.FONT_DARK_MODE.rawValue) : UIColor.init(hex: APP_COLOR.FONT.rawValue)
             }
         }
-        else { return UIColor.init(hex: "#414141") }
+        else { return UIColor.init(hex: APP_COLOR.FONT.rawValue) }
     }
 }
 
