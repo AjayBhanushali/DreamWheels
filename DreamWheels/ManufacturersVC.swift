@@ -122,13 +122,14 @@ extension ManufacturersVC: UICollectionViewDataSource {
             cell.cellView = cardView
             
             if let manufacturersName = viewModel.manufacturers[indexPath.item].name {
-                cell.cellView?.prepareTitle(with: manufacturersName)
+                cell.cellView?.configureCell(with: manufacturersName, indexItem: indexPath.item)
             }
+            
             return cell
         }
         
         if let manufacturersName = viewModel.manufacturers[indexPath.item].name {
-            cell.cellView?.prepareTitle(with: manufacturersName)
+            cell.cellView?.configureCell(with: manufacturersName, indexItem: indexPath.item)
         }
         return cell
     }

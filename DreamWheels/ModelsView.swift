@@ -38,7 +38,9 @@ class ModelsView: UIView {
         titleLabel.font = UIFont(with: .BOLD, of: .TITLE)
     }
     
-    func prepareTitle(with title: String) {
+    func configureCell(with title: String, indexItem: Int) {
         titleLabel.text = title
+        backgroundColor = indexItem%2 == 0 ? .appBackground() : .appSecBackground()
     }
+    
 }

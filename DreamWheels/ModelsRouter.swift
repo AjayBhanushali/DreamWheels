@@ -16,7 +16,5 @@ final class ModelsRouter: ModelsRouterInput {
             viewController?.showAlert(title: "Nice Choice", message: message)
         }
     }
-    
-    
 }
 

@@ -11,7 +11,11 @@ class ModelsVC: UIViewController {
     
     var presenter: ModelsViewOutput!
     var viewState: ViewState = .none
-    var modelsViewModel: ModelsViewModel?
+    var modelsViewModel: ModelsViewModel? {
+        didSet {
+            navigationItem.title = modelsViewModel?.manufacturer.name
+        }
+    }
     
     lazy var collectionViewLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
@@ -38,7 +42,6 @@ class ModelsVC: UIViewController {
     override func loadView() {
         view = UIView()
         view.backgroundColor = .appBackground()
-        navigationItem.title = Strings.appTitle
     }
     
     override func viewDidLoad() {
@@ -122,13 +125,13 @@ extension ModelsVC: UICollectionViewDataSource {
             cell.cellView = cardView
             
             if let modelsName = viewModel.models?[indexPath.item].name {
-                cell.cellView?.prepareTitle(with: modelsName)
+                cell.cellView?.configureCell(with: modelsName, indexItem: indexPath.item)
             }
             return cell
         }
         
         if let modelsName = viewModel.models?[indexPath.item].name {
-            cell.cellView?.prepareTitle(with: modelsName)
+            cell.cellView?.configureCell(with: modelsName, indexItem: indexPath.item)
         }
         return cell
     }
