@@ -30,7 +30,43 @@
 		A8571BDF25B0BC21006100A9 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571BD825B0BC20006100A9 /* NetworkService.swift */; };
 		A8571BE025B0BC21006100A9 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571BD925B0BC21006100A9 /* ImageDownloader.swift */; };
 		A8571BE125B0BC21006100A9 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8571BDA25B0BC21006100A9 /* ImageOperation.swift */; };
+		B160E1BB25BD9081008BAF42 /* ManufacturerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1BA25BD9081008BAF42 /* ManufacturerProtocols.swift */; };
+		B160E1C425BD9329008BAF42 /* Manufacturer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1C325BD9329008BAF42 /* Manufacturer.swift */; };
+		B160E1C925C13D0B008BAF42 /* ManufacturersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1C825C13D0B008BAF42 /* ManufacturersViewModel.swift */; };
+		B160E1CD25C13F2B008BAF42 /* ManufacturersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1CC25C13F2B008BAF42 /* ManufacturersPresenter.swift */; };
+		B160E1D125C14ADB008BAF42 /* ManufacturersInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1D025C14ADB008BAF42 /* ManufacturersInteractor.swift */; };
+		B160E1D425C14BFC008BAF42 /* DreamWheelsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1D325C14BFC008BAF42 /* DreamWheelsAPI.swift */; };
+		B160E1D825C15037008BAF42 /* ManufacturersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1D725C15037008BAF42 /* ManufacturersVC.swift */; };
+		B160E1DE25C15D91008BAF42 /* GenericCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1DD25C15D91008BAF42 /* GenericCollectionViewCell.swift */; };
+		B160E1E425C15E24008BAF42 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1E325C15E24008BAF42 /* FooterView.swift */; };
+		B160E1E925C15F69008BAF42 /* ManufacturersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1E825C15F69008BAF42 /* ManufacturersView.swift */; };
+		B183DC9725D6656D001F7311 /* ManufacturerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183DC9625D6656D001F7311 /* ManufacturerBuilder.swift */; };
+		B183DC9B25D66603001F7311 /* ManufacturersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183DC9A25D66603001F7311 /* ManufacturersRouter.swift */; };
+		B1A0951A25D9023700F04767 /* ModelsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0951925D9023700F04767 /* ModelsBuilder.swift */; };
+		B1A0951D25D902D600F04767 /* ModelsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0951C25D902D600F04767 /* ModelsProtocols.swift */; };
+		B1A0952025D9078B00F04767 /* ModelsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0951F25D9078B00F04767 /* ModelsRouter.swift */; };
+		B1A0952325D908A700F04767 /* ModelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952225D908A700F04767 /* ModelsVC.swift */; };
+		B1A0952625D909BB00F04767 /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952525D909BB00F04767 /* ModelsViewModel.swift */; };
+		B1A0952A25D90C4500F04767 /* ModelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952925D90C4500F04767 /* ModelsView.swift */; };
+		B1A0952D25D90E5200F04767 /* ModelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952C25D90E5200F04767 /* ModelsInteractor.swift */; };
+		B1A0953025D913CD00F04767 /* ModelsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952F25D913CD00F04767 /* ModelsPresenter.swift */; };
+		B1A0954F25D92F4600F04767 /* DreamWheelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0954E25D92F4600F04767 /* DreamWheelsTests.swift */; };
+		B1A0955A25D92F7500F04767 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0955925D92F7500F04767 /* NetworkingTests.swift */; };
+		B1A0956025D92FF400F04767 /* NetworkClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0955F25D92FF400F04767 /* NetworkClientMock.swift */; };
+		B1A0956425D9309300F04767 /* Manufacturers0.json in Resources */ = {isa = PBXBuildFile; fileRef = B1A0956325D9309300F04767 /* Manufacturers0.json */; };
+		B1A0956825D9310200F04767 /* BMWModels.json in Resources */ = {isa = PBXBuildFile; fileRef = B1A0956725D9310200F04767 /* BMWModels.json */; };
+		B1A0956C25D931E200F04767 /* Manufacturers1.json in Resources */ = {isa = PBXBuildFile; fileRef = B1A0956B25D931E200F04767 /* Manufacturers1.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1A0955125D92F4600F04767 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8571B2725B09F30006100A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8571B2E25B09F30006100A9;
+			remoteInfo = DreamWheels;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A8571B2F25B09F30006100A9 /* DreamWheels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamWheels.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,10 +94,45 @@
 		A8571BD825B0BC20006100A9 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		A8571BD925B0BC21006100A9 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		A8571BDA25B0BC21006100A9 /* ImageOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
+		B160E1BA25BD9081008BAF42 /* ManufacturerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerProtocols.swift; sourceTree = "<group>"; };
+		B160E1C325BD9329008BAF42 /* Manufacturer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manufacturer.swift; sourceTree = "<group>"; };
+		B160E1C825C13D0B008BAF42 /* ManufacturersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersViewModel.swift; sourceTree = "<group>"; };
+		B160E1CC25C13F2B008BAF42 /* ManufacturersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersPresenter.swift; sourceTree = "<group>"; };
+		B160E1D025C14ADB008BAF42 /* ManufacturersInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersInteractor.swift; sourceTree = "<group>"; };
+		B160E1D325C14BFC008BAF42 /* DreamWheelsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamWheelsAPI.swift; sourceTree = "<group>"; };
+		B160E1D725C15037008BAF42 /* ManufacturersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersVC.swift; sourceTree = "<group>"; };
+		B160E1DD25C15D91008BAF42 /* GenericCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericCollectionViewCell.swift; sourceTree = "<group>"; };
+		B160E1E325C15E24008BAF42 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		B160E1E825C15F69008BAF42 /* ManufacturersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersView.swift; sourceTree = "<group>"; };
+		B183DC9625D6656D001F7311 /* ManufacturerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerBuilder.swift; sourceTree = "<group>"; };
+		B183DC9A25D66603001F7311 /* ManufacturersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersRouter.swift; sourceTree = "<group>"; };
+		B1A0951925D9023700F04767 /* ModelsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsBuilder.swift; sourceTree = "<group>"; };
+		B1A0951C25D902D600F04767 /* ModelsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsProtocols.swift; sourceTree = "<group>"; };
+		B1A0951F25D9078B00F04767 /* ModelsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsRouter.swift; sourceTree = "<group>"; };
+		B1A0952225D908A700F04767 /* ModelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsVC.swift; sourceTree = "<group>"; };
+		B1A0952525D909BB00F04767 /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
+		B1A0952925D90C4500F04767 /* ModelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsView.swift; sourceTree = "<group>"; };
+		B1A0952C25D90E5200F04767 /* ModelsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsInteractor.swift; sourceTree = "<group>"; };
+		B1A0952F25D913CD00F04767 /* ModelsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsPresenter.swift; sourceTree = "<group>"; };
+		B1A0954C25D92F4600F04767 /* DreamWheelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamWheelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1A0954E25D92F4600F04767 /* DreamWheelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamWheelsTests.swift; sourceTree = "<group>"; };
+		B1A0955025D92F4600F04767 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A0955925D92F7500F04767 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		B1A0955F25D92FF400F04767 /* NetworkClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClientMock.swift; sourceTree = "<group>"; };
+		B1A0956325D9309300F04767 /* Manufacturers0.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Manufacturers0.json; sourceTree = "<group>"; };
+		B1A0956725D9310200F04767 /* BMWModels.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BMWModels.json; sourceTree = "<group>"; };
+		B1A0956B25D931E200F04767 /* Manufacturers1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Manufacturers1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A8571B2C25B09F30006100A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A0954925D92F4600F04767 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A8571B3125B09F30006100A9 /* DreamWheels */,
+				B1A0954D25D92F4600F04767 /* DreamWheelsTests */,
 				A8571B3025B09F30006100A9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				A8571B2F25B09F30006100A9 /* DreamWheels.app */,
+				B1A0954C25D92F4600F04767 /* DreamWheelsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +163,8 @@
 		A8571B3125B09F30006100A9 /* DreamWheels */ = {
 			isa = PBXGroup;
 			children = (
+				B160E1E225C15E16008BAF42 /* Views */,
+				B160E1DC25C15699008BAF42 /* Generic Cells */,
 				A8571B4E25B09FF7006100A9 /* Modules */,
 				A8571B4D25B09FE5006100A9 /* Application Files */,
 				A8571B4C25B09FDD006100A9 /* Common */,
@@ -133,6 +208,8 @@
 		A8571B4E25B09FF7006100A9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				B160E1B925BD9055008BAF42 /* Manufacturers */,
+				B1A0951025D9011800F04767 /* Models */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -186,8 +263,222 @@
 				A8571BD425B0BC20006100A9 /* NetworkError.swift */,
 				A8571BD825B0BC20006100A9 /* NetworkService.swift */,
 				A8571BD725B0BC20006100A9 /* URLRequestable.swift */,
+				B160E1D325C14BFC008BAF42 /* DreamWheelsAPI.swift */,
 			);
 			name = "Network Manager";
+			sourceTree = "<group>";
+		};
+		B160E1B925BD9055008BAF42 /* Manufacturers */ = {
+			isa = PBXGroup;
+			children = (
+				B183DC9925D665E3001F7311 /* Router */,
+				B183DC9525D6652D001F7311 /* Builder */,
+				B160E1D625C15015008BAF42 /* View */,
+				B160E1CF25C14AC9008BAF42 /* Interactor */,
+				B160E1C725C13CEA008BAF42 /* Presenter */,
+				B160E1C125BD9284008BAF42 /* Entites */,
+				B160E1C025BD9278008BAF42 /* Protocols */,
+			);
+			name = Manufacturers;
+			sourceTree = "<group>";
+		};
+		B160E1C025BD9278008BAF42 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1BA25BD9081008BAF42 /* ManufacturerProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B160E1C125BD9284008BAF42 /* Entites */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1C325BD9329008BAF42 /* Manufacturer.swift */,
+			);
+			name = Entites;
+			sourceTree = "<group>";
+		};
+		B160E1C725C13CEA008BAF42 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1C825C13D0B008BAF42 /* ManufacturersViewModel.swift */,
+				B160E1CC25C13F2B008BAF42 /* ManufacturersPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B160E1CF25C14AC9008BAF42 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1D025C14ADB008BAF42 /* ManufacturersInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		B160E1D625C15015008BAF42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1D725C15037008BAF42 /* ManufacturersVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B160E1DC25C15699008BAF42 /* Generic Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1DD25C15D91008BAF42 /* GenericCollectionViewCell.swift */,
+			);
+			name = "Generic Cells";
+			sourceTree = "<group>";
+		};
+		B160E1E225C15E16008BAF42 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952825D90C3400F04767 /* ModelsView */,
+				B160E1E725C15F5A008BAF42 /* Manufacturers View */,
+				B160E1E625C15E3E008BAF42 /* Footer View */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B160E1E625C15E3E008BAF42 /* Footer View */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1E325C15E24008BAF42 /* FooterView.swift */,
+			);
+			name = "Footer View";
+			sourceTree = "<group>";
+		};
+		B160E1E725C15F5A008BAF42 /* Manufacturers View */ = {
+			isa = PBXGroup;
+			children = (
+				B160E1E825C15F69008BAF42 /* ManufacturersView.swift */,
+			);
+			name = "Manufacturers View";
+			sourceTree = "<group>";
+		};
+		B183DC9525D6652D001F7311 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B183DC9625D6656D001F7311 /* ManufacturerBuilder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		B183DC9925D665E3001F7311 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B183DC9A25D66603001F7311 /* ManufacturersRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		B1A0951025D9011800F04767 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951825D9017A00F04767 /* Router */,
+				B1A0951725D9017200F04767 /* Builder */,
+				B1A0951625D9016B00F04767 /* View */,
+				B1A0951525D9016200F04767 /* Presenter */,
+				B1A0951425D9015700F04767 /* Interactor */,
+				B1A0951325D9014D00F04767 /* Presenter */,
+				B1A0951225D9014300F04767 /* Entities */,
+				B1A0951125D9013400F04767 /* Protocols */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B1A0951125D9013400F04767 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951C25D902D600F04767 /* ModelsProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B1A0951225D9014300F04767 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		B1A0951325D9014D00F04767 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B1A0951425D9015700F04767 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952C25D90E5200F04767 /* ModelsInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		B1A0951525D9016200F04767 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952525D909BB00F04767 /* ModelsViewModel.swift */,
+				B1A0952F25D913CD00F04767 /* ModelsPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B1A0951625D9016B00F04767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952225D908A700F04767 /* ModelsVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B1A0951725D9017200F04767 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951925D9023700F04767 /* ModelsBuilder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		B1A0951825D9017A00F04767 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951F25D9078B00F04767 /* ModelsRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		B1A0952825D90C3400F04767 /* ModelsView */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952925D90C4500F04767 /* ModelsView.swift */,
+			);
+			name = ModelsView;
+			sourceTree = "<group>";
+		};
+		B1A0954D25D92F4600F04767 /* DreamWheelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0955825D92F5100F04767 /* Networking */,
+				B1A0954E25D92F4600F04767 /* DreamWheelsTests.swift */,
+				B1A0955025D92F4600F04767 /* Info.plist */,
+				B1A0956325D9309300F04767 /* Manufacturers0.json */,
+				B1A0956B25D931E200F04767 /* Manufacturers1.json */,
+				B1A0956725D9310200F04767 /* BMWModels.json */,
+			);
+			path = DreamWheelsTests;
+			sourceTree = "<group>";
+		};
+		B1A0955825D92F5100F04767 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0955925D92F7500F04767 /* NetworkingTests.swift */,
+				B1A0955F25D92FF400F04767 /* NetworkClientMock.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,17 +501,39 @@
 			productReference = A8571B2F25B09F30006100A9 /* DreamWheels.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B1A0954B25D92F4600F04767 /* DreamWheelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1A0955325D92F4600F04767 /* Build configuration list for PBXNativeTarget "DreamWheelsTests" */;
+			buildPhases = (
+				B1A0954825D92F4600F04767 /* Sources */,
+				B1A0954925D92F4600F04767 /* Frameworks */,
+				B1A0954A25D92F4600F04767 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1A0955225D92F4600F04767 /* PBXTargetDependency */,
+			);
+			name = DreamWheelsTests;
+			productName = DreamWheelsTests;
+			productReference = B1A0954C25D92F4600F04767 /* DreamWheelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A8571B2725B09F30006100A9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					A8571B2E25B09F30006100A9 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					B1A0954B25D92F4600F04767 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = A8571B2E25B09F30006100A9;
 					};
 				};
 			};
@@ -238,6 +551,7 @@
 			projectRoot = "";
 			targets = (
 				A8571B2E25B09F30006100A9 /* DreamWheels */,
+				B1A0954B25D92F4600F04767 /* DreamWheelsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +566,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B1A0954A25D92F4600F04767 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A0956825D9310200F04767 /* BMWModels.json in Resources */,
+				B1A0956C25D931E200F04767 /* Manufacturers1.json in Resources */,
+				B1A0956425D9309300F04767 /* Manufacturers0.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,31 +583,69 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A0952D25D90E5200F04767 /* ModelsInteractor.swift in Sources */,
 				A8571BC925B0BBFF006100A9 /* UIImageX.swift in Sources */,
 				A8571BDB25B0BC21006100A9 /* NetworkError.swift in Sources */,
+				B1A0952625D909BB00F04767 /* ModelsViewModel.swift in Sources */,
+				B160E1BB25BD9081008BAF42 /* ManufacturerProtocols.swift in Sources */,
+				B160E1E425C15E24008BAF42 /* FooterView.swift in Sources */,
+				B160E1C925C13D0B008BAF42 /* ManufacturersViewModel.swift in Sources */,
 				A8571BDC25B0BC21006100A9 /* NetworkAPIEndPoint.swift in Sources */,
 				A8571BCE25B0BBFF006100A9 /* ConstraintsX.swift in Sources */,
+				B160E1DE25C15D91008BAF42 /* GenericCollectionViewCell.swift in Sources */,
+				B183DC9725D6656D001F7311 /* ManufacturerBuilder.swift in Sources */,
 				A8571BCD25B0BBFF006100A9 /* ViewX.swift in Sources */,
 				A8571B5425B0A217006100A9 /* AppBuilder.swift in Sources */,
+				B160E1E925C15F69008BAF42 /* ManufacturersView.swift in Sources */,
 				A8571BCF25B0BBFF006100A9 /* CollectionViewX.swift in Sources */,
+				B1A0952325D908A700F04767 /* ModelsVC.swift in Sources */,
 				A8571BD125B0BBFF006100A9 /* UIImageViewX.swift in Sources */,
 				A8571B3725B09F30006100A9 /* ViewController.swift in Sources */,
+				B160E1CD25C13F2B008BAF42 /* ManufacturersPresenter.swift in Sources */,
 				A8571BDF25B0BC21006100A9 /* NetworkService.swift in Sources */,
+				B1A0953025D913CD00F04767 /* ModelsPresenter.swift in Sources */,
+				B160E1D125C14ADB008BAF42 /* ManufacturersInteractor.swift in Sources */,
 				A8571B3325B09F30006100A9 /* AppDelegate.swift in Sources */,
+				B1A0951D25D902D600F04767 /* ModelsProtocols.swift in Sources */,
 				A8571BDE25B0BC21006100A9 /* URLRequestable.swift in Sources */,
 				A8571BDD25B0BC21006100A9 /* NetworkAPI.swift in Sources */,
+				B1A0952025D9078B00F04767 /* ModelsRouter.swift in Sources */,
+				B1A0951A25D9023700F04767 /* ModelsBuilder.swift in Sources */,
 				A8571BCC25B0BBFF006100A9 /* FontX.swift in Sources */,
 				A8571BD025B0BBFF006100A9 /* UIViewControllerX.swift in Sources */,
+				B183DC9B25D66603001F7311 /* ManufacturersRouter.swift in Sources */,
 				A8571BE025B0BC21006100A9 /* ImageDownloader.swift in Sources */,
 				A8571BCB25B0BBFF006100A9 /* NavigationControllerX.swift in Sources */,
+				B160E1C425BD9329008BAF42 /* Manufacturer.swift in Sources */,
 				A8571BB925B0BBC9006100A9 /* Reusable.swift in Sources */,
 				A8571BE125B0BC21006100A9 /* ImageOperation.swift in Sources */,
 				A8571BCA25B0BBFF006100A9 /* UIColorX.swift in Sources */,
+				B160E1D825C15037008BAF42 /* ManufacturersVC.swift in Sources */,
 				A8571BBD25B0BBE6006100A9 /* Constants.swift in Sources */,
+				B160E1D425C14BFC008BAF42 /* DreamWheelsAPI.swift in Sources */,
+				B1A0952A25D90C4500F04767 /* ModelsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1A0954825D92F4600F04767 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A0956025D92FF400F04767 /* NetworkClientMock.swift in Sources */,
+				B1A0954F25D92F4600F04767 /* DreamWheelsTests.swift in Sources */,
+				B1A0955A25D92F7500F04767 /* NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1A0955225D92F4600F04767 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8571B2E25B09F30006100A9 /* DreamWheels */;
+			targetProxy = B1A0955125D92F4600F04767 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A8571B3D25B09F33006100A9 /* LaunchScreen.storyboard */ = {
@@ -457,6 +819,46 @@
 			};
 			name = Release;
 		};
+		B1A0955425D92F4600F04767 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DreamWheelsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ajaybhanushali.DreamWheelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamWheels.app/DreamWheels";
+			};
+			name = Debug;
+		};
+		B1A0955525D92F4600F04767 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DreamWheelsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ajaybhanushali.DreamWheelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamWheels.app/DreamWheels";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -474,6 +876,15 @@
 			buildConfigurations = (
 				A8571B4425B09F33006100A9 /* Debug */,
 				A8571B4525B09F33006100A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1A0955325D92F4600F04767 /* Build configuration list for PBXNativeTarget "DreamWheelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1A0955425D92F4600F04767 /* Debug */,
+				B1A0955525D92F4600F04767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

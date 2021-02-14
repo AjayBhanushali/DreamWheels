@@ -1,0 +1,22 @@
+{
+  "page": 1,
+  "pageSize": 15,
+  "totalPageCount": 2,
+  "wkda": {
+    "170": "Chrysler",
+    "189": "Cupra",
+    "190": "Citroen",
+    "191": "Corvette",
+    "194": "Dacia",
+    "195": "Daewoo",
+    "210": "Daihatsu",
+    "230": "Dodge",
+    "235": "DS Automobiles",
+    "250": "e.GO",
+    "277": "Ferrari",
+    "280": "Fiat",
+    "285": "Ford",
+    "340": "Honda",
+    "345": "Hyundai"
+  }
+}
