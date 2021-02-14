@@ -38,7 +38,7 @@ class ManufacturersVC: UIViewController {
     override func loadView() {
         view = UIView()
         view.backgroundColor = .appBackground()
-        navigationItem.title = Strings.appTitle
+        navigationItem.title = Strings.manufacturers
     }
     
     override func viewDidLoad() {

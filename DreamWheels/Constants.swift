@@ -18,6 +18,7 @@ enum Strings {
     static let close = "close"
     
     static let appTitle = "DreamWheels"
+    static let manufacturers = "Manufacturers"
 }
 
 /// App fonts size should be used from here

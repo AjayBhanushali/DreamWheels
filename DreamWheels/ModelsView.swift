@@ -32,7 +32,8 @@ class ModelsView: UIView {
     // MARK: Private Custom Methods
     private func prepareView() {
         addSubview(titleLabel)
-        titleLabel.pinEdgesEquallyToSuperview(atrributes: [.leading, .trailing, .bottom, .top], constant: Constants.defaultPadding)
+        titleLabel.pinEdgesEquallyToSuperview(atrributes: [.trailing, .bottom, .top], constant: Constants.defaultPadding)
+        titleLabel.pinEdgesEquallyToSuperview(atrributes: [.leading], constant: Constants.defaultPadding*2)
         titleLabel.textAlignment = .left
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont(with: .BOLD, of: .TITLE)

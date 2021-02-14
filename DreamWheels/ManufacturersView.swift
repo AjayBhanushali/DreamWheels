@@ -32,7 +32,8 @@ class ManufacturersView: UIView {
     // MARK: Private Custom Methods
     private func prepareView() {
         addSubview(titleLabel)
-        titleLabel.pinEdgesEquallyToSuperview(atrributes: [.leading, .trailing, .bottom, .top], constant: Constants.defaultPadding)
+        titleLabel.pinEdgesEquallyToSuperview(atrributes: [.trailing, .bottom, .top], constant: Constants.defaultPadding)
+        titleLabel.pinEdgesEquallyToSuperview(atrributes: [.leading], constant: Constants.defaultPadding*2)
         titleLabel.textAlignment = .left
         titleLabel.numberOfLines = 0
         titleLabel.font = UIFont(with: .BOLD, of: .TITLE)
@@ -40,6 +41,7 @@ class ManufacturersView: UIView {
     
     func configureCell(with title: String, indexItem: Int) {
         titleLabel.text = title
-        backgroundColor = indexItem%2 == 0 ? .appBackground() : .appSecBackground()
+        backgroundColor = [.appBackground(), .appSecBackground(), .appSecBackground(), .appBackground()][indexItem % 4]
+        backgroundColor = [.appBackground(), .appSecBackground()][indexItem % 2]
     }
 }
