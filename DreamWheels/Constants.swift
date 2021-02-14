@@ -50,6 +50,9 @@ enum APP_IMAGES: String {
 enum APP_COLOR: String {
     case THEME = "3ca5dd"
     case SUB_THEME = "70c295"
+    case FONT = "414141"
+    case FONT_DARK_MODE = "f5f542"
+    
 }
 
 /// App constants which are UI specific
