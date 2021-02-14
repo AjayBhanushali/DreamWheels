@@ -33,8 +33,8 @@ extension ManufacturersPresenter: ManufacturersViewOutput {
             return
         }
         view?.changeViewState(.loading)
-        pageNum += 1
         interactor.loadManufacturers(for: pageNum)
+        pageNum += 1
     }
     
     func didSelectManufacturer(at index: Int) {
@@ -47,7 +47,7 @@ extension ManufacturersPresenter: ManufacturersInteractorOutput {
     func getManufacturersSuccess(_ manufacturersBase: ManufacturersBaseModel) {
         guard let manufacturers = manufacturersBase.wkda?.manufacturers else { return }
         
-        if totalCount == Constants.defaultTotalCount {
+        if pageNum == Constants.defaultPageNum+1 {
             manufacturersViewModel = ManufacturersViewModel(manufacturers)
             totalCount = manufacturers.count
             

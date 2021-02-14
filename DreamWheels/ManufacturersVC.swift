@@ -137,6 +137,16 @@ extension ManufacturersVC: UICollectionViewDataSource {
 }
 
 extension ManufacturersVC: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        guard let viewModel = manufacturersViewModel else { return }
+        guard viewState != .loading, indexPath.row == (viewModel.manufacturersCount - 1) else {
+            return
+        }
+        presenter.getManufacturers()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
     }
