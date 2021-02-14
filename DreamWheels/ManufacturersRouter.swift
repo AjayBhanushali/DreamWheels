@@ -10,8 +10,9 @@ import UIKit
 final class ManufacturersRouter: ManufacturersRouterInput {
     weak var viewController: UIViewController?
     
-    func showManufacturerDetails(with manufacturer: ManufacturerModel) {
-        
+    func showModels(with manufacturer: DreamWheelModel) {
+        let vc = ModelsModuleBuilder().buildModule(with: manufacturer)
+        viewController?.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

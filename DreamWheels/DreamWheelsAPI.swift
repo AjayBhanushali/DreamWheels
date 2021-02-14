@@ -9,6 +9,7 @@ import Foundation
 
 enum DreamWheelsAPI: NetworkAPIEndPoint, URLRequestable {
     case getManufacturersFor(page: Int)
+    case getModelsFor(manufacturId: String, page: Int)
 }
 
 extension DreamWheelsAPI {
@@ -25,6 +26,8 @@ extension DreamWheelsAPI {
         switch self {
         case .getManufacturersFor:
             return "/v1/car-types/manufacturer"
+        case .getModelsFor:
+            return "/v1/car-types/main-types"
         }
         
     }
@@ -33,6 +36,13 @@ extension DreamWheelsAPI {
         switch self {
         case let .getManufacturersFor(page):
             return [
+                "page": page,
+                "pageSize": Constants.defaultPageSize,
+                "wa_key": APIConstants.waKey,
+            ]
+        case .getModelsFor(manufacturId: let manufacturId, page: let page):
+            return [
+                "manufacturer": manufacturId,
                 "page": page,
                 "pageSize": Constants.defaultPageSize,
                 "wa_key": APIConstants.waKey,

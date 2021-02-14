@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct ManufacturersBaseModel: Decodable {
+struct DreamWheelsBaseModel: Decodable {
     let page : Int?
     let pageSize : Int?
     let totalPageCount : Int?
-    let wkda: ManufacturersModel?
+    let wkda: DreamWheelsModel?
     
     // Define DynamicCodingKeys type needed for creating
     // decoding container from JSONDecoder
@@ -44,14 +44,14 @@ struct ManufacturersBaseModel: Decodable {
         page = try values.decodeIfPresent(Int.self, forKey: .page)
         pageSize = try values.decodeIfPresent(Int.self, forKey: .pageSize)
         totalPageCount = try values.decodeIfPresent(Int.self, forKey: .totalPageCount)
-        wkda = try values.decodeIfPresent(ManufacturersModel.self, forKey: .wkda)
+        wkda = try values.decodeIfPresent(DreamWheelsModel.self, forKey: .wkda)
     }
     
     
 }
 
-struct ManufacturersModel: Decodable {
-    let manufacturers: [ManufacturerModel]?
+struct DreamWheelsModel: Decodable {
+    let list: [DreamWheelModel]?
     
     // Define DynamicCodingKeys type needed for creating
     // decoding container from JSONDecoder
@@ -77,24 +77,24 @@ struct ManufacturersModel: Decodable {
         // The container will contain all the JSON first level key
         let container = try decoder.container(keyedBy: DynamicCodingKeys.self)
         
-        var tempArray = [ManufacturerModel]()
+        var tempArray = [DreamWheelModel]()
         
         // 2
         // Loop through each key (student ID) in container
         for key in container.allKeys {
             // Decode Student using key & keep decoded Student object in tempArray
             let value = try container.decode(String.self, forKey: DynamicCodingKeys(stringValue: key.stringValue)!)
-            let decodedObject = ManufacturerModel(id: key.stringValue, name: value)
+            let decodedObject = DreamWheelModel(id: key.stringValue, name: value)
             tempArray.append(decodedObject)
         }
         
         // 3
         // Finish decoding all Student objects. Thus assign tempArray to array.
-        manufacturers = tempArray
+        list = tempArray
     }
 }
 
-struct ManufacturerModel: Decodable {
+struct DreamWheelModel: Decodable {
     var id: String?
     var name: String?
 }

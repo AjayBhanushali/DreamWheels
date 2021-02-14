@@ -48,7 +48,7 @@ protocol ManufacturersViewOutput: AnyObject {
 }
 
 protocol ManufacturersInteractorOutput: AnyObject {
-    func getManufacturersSuccess(_ manufacturersBase: ManufacturersBaseModel)
+    func getManufacturersSuccess(_ manufacturersBase: DreamWheelsBaseModel)
     func getManufacturersError(_ error: NetworkError)
 }
 
@@ -61,5 +61,5 @@ protocol ManufacturersInteractorInput: AnyObject {
 
 //MARK: Router
 protocol ManufacturersRouterInput: AnyObject {
-    func showManufacturerDetails(with manufacturer: ManufacturerModel)
+    func showModels(with manufacturer: DreamWheelModel)
 }

@@ -39,13 +39,13 @@ extension ManufacturersPresenter: ManufacturersViewOutput {
     
     func didSelectManufacturer(at index: Int) {
         let manufacturer = manufacturersViewModel.manufacturers[index]
-        router.showManufacturerDetails(with: manufacturer)
+        router.showModels(with: manufacturer)
     }
 }
 
 extension ManufacturersPresenter: ManufacturersInteractorOutput {
-    func getManufacturersSuccess(_ manufacturersBase: ManufacturersBaseModel) {
-        guard let manufacturers = manufacturersBase.wkda?.manufacturers else { return }
+    func getManufacturersSuccess(_ manufacturersBase: DreamWheelsBaseModel) {
+        guard let manufacturers = manufacturersBase.wkda?.list else { return }
         
         if pageNum == Constants.defaultPageNum+1 {
             manufacturersViewModel = ManufacturersViewModel(manufacturers)
@@ -64,7 +64,7 @@ extension ManufacturersPresenter: ManufacturersInteractorOutput {
         }
     }
     
-    fileprivate func insertMoreManufacturers(with manufacturers: [ManufacturerModel]) {
+    fileprivate func insertMoreManufacturers(with manufacturers: [DreamWheelModel]) {
         let previousCount = totalCount
         totalCount += manufacturers.count
         manufacturersViewModel.addMoreManufacturers(manufacturers)

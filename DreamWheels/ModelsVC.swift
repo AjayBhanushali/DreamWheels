@@ -1,17 +1,17 @@
 //
-//  ManufacturersVC.swift
+//  ModelsVC.swift
 //  DreamWheels
 //
-//  Created by Ajay Bhanushali on 27/01/21.
+//  Created by Ajay Bhanushali on 14/02/21.
 //
 
 import UIKit
 
-class ManufacturersVC: UIViewController {
+class ModelsVC: UIViewController {
     
-    var presenter: ManufacturersViewOutput!
+    var presenter: ModelsViewOutput!
     var viewState: ViewState = .none
-    var manufacturersViewModel: ManufacturersViewModel?
+    var modelsViewModel: ModelsViewModel?
     
     lazy var collectionViewLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
@@ -44,7 +44,7 @@ class ManufacturersVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        presenter.getManufacturers()
+        presenter.getModels()
     }
     
     private func setupViews() {
@@ -55,17 +55,17 @@ class ManufacturersVC: UIViewController {
     private func configureCollectionView() {
         view.addSubview(collectionView)
         collectionView.pinEdgesToSuperview()
-        collectionView.registerCell(GenericCollectionViewCell<ManufacturersView>.self)
+        collectionView.registerCell(GenericCollectionViewCell<ModelsView>.self)
         collectionView.register(FooterView.self, ofKind: UICollectionView.elementKindSectionFooter)
     }
 }
 
-extension ManufacturersVC: ManufacturersViewInput {
+extension ModelsVC: ModelsViewInput {
     func changeViewState(_ state: ViewState) {
         viewState = state
         switch state {
         case .loading:
-            if manufacturersViewModel == nil {
+            if modelsViewModel == nil {
                 showSpinner()
             }
         case .content:
@@ -74,61 +74,61 @@ extension ManufacturersVC: ManufacturersViewInput {
         case .error(let message):
             hideSpinner()
             showAlert(title: Strings.error, message: message, retryAction: { [unowned self] in
-                self.presenter.getManufacturers()
+                self.presenter.getModels()
             })
         default:
             break
         }
     }
     
-    func displayManufacturers(with viewModel: ManufacturersViewModel) {
-        manufacturersViewModel = viewModel
+    func displayModels(with viewModel: ModelsViewModel) {
+        modelsViewModel = viewModel
         collectionView.reloadData()
     }
     
-    func insertManufacturers(with viewModel: ManufacturersViewModel, at indexPaths: [IndexPath]) {
+    func insertModels(with viewModel: ModelsViewModel, at indexPaths: [IndexPath]) {
         collectionView.performBatchUpdates({ [weak self] in
             guard let self = self else { return }
-            self.manufacturersViewModel = viewModel
+            self.modelsViewModel = viewModel
             self.collectionView.insertItems(at: indexPaths)
         })
     }
     
     func resetViews() {
-        manufacturersViewModel = nil
+        modelsViewModel = nil
         collectionView.reloadData()
     }
     
     
 }
 
-extension ManufacturersVC: UICollectionViewDataSource {
+extension ModelsVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let viewModel = manufacturersViewModel, !viewModel.isEmpty else {
+        guard let viewModel = modelsViewModel, !viewModel.isEmpty else {
             return 0
         }
-        return viewModel.manufacturersCount
+        return viewModel.modelsCount
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as GenericCollectionViewCell<ManufacturersView>
+        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as GenericCollectionViewCell<ModelsView>
         
-        guard let viewModel = manufacturersViewModel else {
+        guard let viewModel = modelsViewModel else {
             return cell
         }
          
         guard cell.cellView != nil else {
-            let cardView = ManufacturersView(frame: .zero)
+            let cardView = ModelsView(frame: .zero)
             cell.cellView = cardView
             
-            if let manufacturersName = viewModel.manufacturers[indexPath.item].name {
-                cell.cellView?.prepareTitle(with: manufacturersName)
+            if let modelsName = viewModel.models?[indexPath.item].name {
+                cell.cellView?.prepareTitle(with: modelsName)
             }
             return cell
         }
         
-        if let manufacturersName = viewModel.manufacturers[indexPath.item].name {
-            cell.cellView?.prepareTitle(with: manufacturersName)
+        if let modelsName = viewModel.models?[indexPath.item].name {
+            cell.cellView?.prepareTitle(with: modelsName)
         }
         return cell
     }
@@ -136,24 +136,24 @@ extension ManufacturersVC: UICollectionViewDataSource {
     
 }
 
-extension ManufacturersVC: UICollectionViewDelegateFlowLayout {
+extension ModelsVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         
-        guard let viewModel = manufacturersViewModel else { return }
-        guard viewState != .loading, indexPath.row == (viewModel.manufacturersCount - 1) else {
+        guard let viewModel = modelsViewModel else { return }
+        guard viewState != .loading, indexPath.row == (viewModel.modelsCount - 1) else {
             return
         }
-        presenter.getManufacturers()
+        presenter.getModels()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        presenter.didSelectManufacturer(at: indexPath.item)
+        presenter.didSelectModel(at: indexPath.item)
     }
     
     //MARK: UICollectionViewFooter
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        if viewState == .loading && manufacturersViewModel != nil {
+        if viewState == .loading && modelsViewModel != nil {
             return CGSize(width: Constants.screenWidth, height: 50)
         }
         return CGSize.zero
@@ -169,3 +169,4 @@ extension ManufacturersVC: UICollectionViewDelegateFlowLayout {
         }
     }
 }
+

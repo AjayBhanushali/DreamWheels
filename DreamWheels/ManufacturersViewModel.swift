@@ -8,9 +8,9 @@
 import Foundation
 
 struct ManufacturersViewModel {
-    var manufacturers: [ManufacturerModel] = []
+    var manufacturers: [DreamWheelModel] = []
     
-    init(_ _manufacturers: [ManufacturerModel]) {
+    init(_ _manufacturers: [DreamWheelModel]) {
         manufacturers = _manufacturers
     }
     
@@ -22,7 +22,7 @@ struct ManufacturersViewModel {
         return manufacturers.count
     }
     
-    mutating func addMoreManufacturers(_ _manufacturers: [ManufacturerModel]) {
+    mutating func addMoreManufacturers(_ _manufacturers: [DreamWheelModel]) {
         manufacturers += _manufacturers
     }
 }

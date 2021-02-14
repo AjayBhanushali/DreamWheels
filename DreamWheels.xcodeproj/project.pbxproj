@@ -42,6 +42,14 @@
 		B160E1E925C15F69008BAF42 /* ManufacturersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160E1E825C15F69008BAF42 /* ManufacturersView.swift */; };
 		B183DC9725D6656D001F7311 /* ManufacturerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183DC9625D6656D001F7311 /* ManufacturerBuilder.swift */; };
 		B183DC9B25D66603001F7311 /* ManufacturersRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B183DC9A25D66603001F7311 /* ManufacturersRouter.swift */; };
+		B1A0951A25D9023700F04767 /* ModelsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0951925D9023700F04767 /* ModelsBuilder.swift */; };
+		B1A0951D25D902D600F04767 /* ModelsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0951C25D902D600F04767 /* ModelsProtocols.swift */; };
+		B1A0952025D9078B00F04767 /* ModelsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0951F25D9078B00F04767 /* ModelsRouter.swift */; };
+		B1A0952325D908A700F04767 /* ModelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952225D908A700F04767 /* ModelsVC.swift */; };
+		B1A0952625D909BB00F04767 /* ModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952525D909BB00F04767 /* ModelsViewModel.swift */; };
+		B1A0952A25D90C4500F04767 /* ModelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952925D90C4500F04767 /* ModelsView.swift */; };
+		B1A0952D25D90E5200F04767 /* ModelsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952C25D90E5200F04767 /* ModelsInteractor.swift */; };
+		B1A0953025D913CD00F04767 /* ModelsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A0952F25D913CD00F04767 /* ModelsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +90,14 @@
 		B160E1E825C15F69008BAF42 /* ManufacturersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersView.swift; sourceTree = "<group>"; };
 		B183DC9625D6656D001F7311 /* ManufacturerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturerBuilder.swift; sourceTree = "<group>"; };
 		B183DC9A25D66603001F7311 /* ManufacturersRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManufacturersRouter.swift; sourceTree = "<group>"; };
+		B1A0951925D9023700F04767 /* ModelsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsBuilder.swift; sourceTree = "<group>"; };
+		B1A0951C25D902D600F04767 /* ModelsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsProtocols.swift; sourceTree = "<group>"; };
+		B1A0951F25D9078B00F04767 /* ModelsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsRouter.swift; sourceTree = "<group>"; };
+		B1A0952225D908A700F04767 /* ModelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsVC.swift; sourceTree = "<group>"; };
+		B1A0952525D909BB00F04767 /* ModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsViewModel.swift; sourceTree = "<group>"; };
+		B1A0952925D90C4500F04767 /* ModelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsView.swift; sourceTree = "<group>"; };
+		B1A0952C25D90E5200F04767 /* ModelsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsInteractor.swift; sourceTree = "<group>"; };
+		B1A0952F25D913CD00F04767 /* ModelsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +175,8 @@
 		A8571B4E25B09FF7006100A9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B160E1B925BD9055008BAF42 /* Manufacturer */,
+				B160E1B925BD9055008BAF42 /* Manufacturers */,
+				B1A0951025D9011800F04767 /* Models */,
 			);
 			name = Modules;
 			sourceTree = "<group>";
@@ -218,7 +235,7 @@
 			name = "Network Manager";
 			sourceTree = "<group>";
 		};
-		B160E1B925BD9055008BAF42 /* Manufacturer */ = {
+		B160E1B925BD9055008BAF42 /* Manufacturers */ = {
 			isa = PBXGroup;
 			children = (
 				B183DC9925D665E3001F7311 /* Router */,
@@ -229,7 +246,7 @@
 				B160E1C125BD9284008BAF42 /* Entites */,
 				B160E1C025BD9278008BAF42 /* Protocols */,
 			);
-			name = Manufacturer;
+			name = Manufacturers;
 			sourceTree = "<group>";
 		};
 		B160E1C025BD9278008BAF42 /* Protocols */ = {
@@ -284,6 +301,7 @@
 		B160E1E225C15E16008BAF42 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B1A0952825D90C3400F04767 /* ModelsView */,
 				B160E1E725C15F5A008BAF42 /* Manufacturers View */,
 				B160E1E625C15E3E008BAF42 /* Footer View */,
 			);
@@ -320,6 +338,92 @@
 				B183DC9A25D66603001F7311 /* ManufacturersRouter.swift */,
 			);
 			name = Router;
+			sourceTree = "<group>";
+		};
+		B1A0951025D9011800F04767 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951825D9017A00F04767 /* Router */,
+				B1A0951725D9017200F04767 /* Builder */,
+				B1A0951625D9016B00F04767 /* View */,
+				B1A0951525D9016200F04767 /* Presenter */,
+				B1A0951425D9015700F04767 /* Interactor */,
+				B1A0951325D9014D00F04767 /* Presenter */,
+				B1A0951225D9014300F04767 /* Entities */,
+				B1A0951125D9013400F04767 /* Protocols */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B1A0951125D9013400F04767 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951C25D902D600F04767 /* ModelsProtocols.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		B1A0951225D9014300F04767 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		B1A0951325D9014D00F04767 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B1A0951425D9015700F04767 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952C25D90E5200F04767 /* ModelsInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		B1A0951525D9016200F04767 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952525D909BB00F04767 /* ModelsViewModel.swift */,
+				B1A0952F25D913CD00F04767 /* ModelsPresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		B1A0951625D9016B00F04767 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952225D908A700F04767 /* ModelsVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B1A0951725D9017200F04767 /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951925D9023700F04767 /* ModelsBuilder.swift */,
+			);
+			name = Builder;
+			sourceTree = "<group>";
+		};
+		B1A0951825D9017A00F04767 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0951F25D9078B00F04767 /* ModelsRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		B1A0952825D90C3400F04767 /* ModelsView */ = {
+			isa = PBXGroup;
+			children = (
+				B1A0952925D90C4500F04767 /* ModelsView.swift */,
+			);
+			name = ModelsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,8 +495,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A0952D25D90E5200F04767 /* ModelsInteractor.swift in Sources */,
 				A8571BC925B0BBFF006100A9 /* UIImageX.swift in Sources */,
 				A8571BDB25B0BC21006100A9 /* NetworkError.swift in Sources */,
+				B1A0952625D909BB00F04767 /* ModelsViewModel.swift in Sources */,
 				B160E1BB25BD9081008BAF42 /* ManufacturerProtocols.swift in Sources */,
 				B160E1E425C15E24008BAF42 /* FooterView.swift in Sources */,
 				B160E1C925C13D0B008BAF42 /* ManufacturersViewModel.swift in Sources */,
@@ -404,14 +510,19 @@
 				A8571B5425B0A217006100A9 /* AppBuilder.swift in Sources */,
 				B160E1E925C15F69008BAF42 /* ManufacturersView.swift in Sources */,
 				A8571BCF25B0BBFF006100A9 /* CollectionViewX.swift in Sources */,
+				B1A0952325D908A700F04767 /* ModelsVC.swift in Sources */,
 				A8571BD125B0BBFF006100A9 /* UIImageViewX.swift in Sources */,
 				A8571B3725B09F30006100A9 /* ViewController.swift in Sources */,
 				B160E1CD25C13F2B008BAF42 /* ManufacturersPresenter.swift in Sources */,
 				A8571BDF25B0BC21006100A9 /* NetworkService.swift in Sources */,
+				B1A0953025D913CD00F04767 /* ModelsPresenter.swift in Sources */,
 				B160E1D125C14ADB008BAF42 /* ManufacturersInteractor.swift in Sources */,
 				A8571B3325B09F30006100A9 /* AppDelegate.swift in Sources */,
+				B1A0951D25D902D600F04767 /* ModelsProtocols.swift in Sources */,
 				A8571BDE25B0BC21006100A9 /* URLRequestable.swift in Sources */,
 				A8571BDD25B0BC21006100A9 /* NetworkAPI.swift in Sources */,
+				B1A0952025D9078B00F04767 /* ModelsRouter.swift in Sources */,
+				B1A0951A25D9023700F04767 /* ModelsBuilder.swift in Sources */,
 				A8571BCC25B0BBFF006100A9 /* FontX.swift in Sources */,
 				A8571BD025B0BBFF006100A9 /* UIViewControllerX.swift in Sources */,
 				B183DC9B25D66603001F7311 /* ManufacturersRouter.swift in Sources */,
@@ -424,6 +535,7 @@
 				B160E1D825C15037008BAF42 /* ManufacturersVC.swift in Sources */,
 				A8571BBD25B0BBE6006100A9 /* Constants.swift in Sources */,
 				B160E1D425C14BFC008BAF42 /* DreamWheelsAPI.swift in Sources */,
+				B1A0952A25D90C4500F04767 /* ModelsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
